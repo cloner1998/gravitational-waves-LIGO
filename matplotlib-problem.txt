@@ -1,0 +1,3 @@
+before run any notebook make sure you address the matplotlib correctly and by hand
+import matplotlib
+matplotlib.use('module://matplotlib_inline.backend_inline')
