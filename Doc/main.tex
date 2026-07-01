@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amscd, amsthm, amsfonts}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin -20pt
+\headsep 10pt
+\textheight 8.7in
+\textwidth 6.65in
+\linespread{1.2}
+
+\title{\textbf{Time–Frequency and Statistical Analysis of GW150914 Using Open LIGO Data}}
+
+\author{
+	Sajjad Yami \thanks{All analysis code is publicly available at \url{https://github.com/cloner1998/gravitational-waves-LIGO}.}
+	\\
+	Course: Special Topics In Gravity \\
+	Instructor: Dr. Bahram Mashhoon \\
+	Institution: Sharif University of Technology \\
+}
+
+\date{\today}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\newcommand{\rr}{\mathbb{R}}
+
+\newcommand{\al}{\alpha}
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\aff}{aff}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{section/abstract}
+\end{abstract}
+
+\input{section/introduction}
+\input{section/The LIGO Detectors and GW150914}
+\input{section/Data Acquisition and Conditioning}
+\input{section/Time Delay Measurement Between H1 and L1}
+\input{section/Time–Frequency Analysis (Q-Transform)}
+\input{section/Matched Filtering and Signal-to-Noise Ratio}
+\input{section/Discussion}
+
+\bibliographystyle{unsrt}
+\bibliography{references} % see references.bib for bibliography management
+
+\end{document}

@@ -1,0 +1,153 @@
+\section{Introduction} \label{sec:1}
+
+The detection of gravitational waves represents one of the most profound experimental achievements
+in the history of physics. Predicted by Albert Einstein's general theory of relativity in 1916,
+gravitational waves are ripples in the fabric of spacetime produced by the acceleration of massive
+objects. For nearly a century, they remained beyond observational reach --- their amplitudes so
+vanishingly small that detecting them demanded sensitivities previously thought impossible. That
+barrier was broken on 14 September 2015, when the Laser Interferometer Gravitational-Wave
+Observatory (LIGO) recorded GW150914, the first direct observation of a gravitational-wave signal,
+originating from the inspiral and merger of two stellar-mass black holes approximately 1.3 billion
+light-years away \cite{Abbott2016Discovery}. The event marked not merely a technological milestone but a
+turning point in observational astronomy: it confirmed the existence of binary black hole systems,
+validated general relativity in the strong-field dynamical regime, and opened an entirely new
+observational window onto the universe, one inaccessible to electromagnetic astronomy.
+
+\subsection*{Gravitational Waves from Linearized General Relativity}
+
+Gravitational waves emerge naturally from Einstein's field equations when spacetime is treated as
+a flat Minkowski background perturbed by a small metric deviation. Writing the full metric as
+\begin{equation}
+	g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \qquad |h_{\mu\nu}| \ll 1,
+\end{equation}
+where $\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ is the flat Minkowski metric and $h_{\mu\nu}$
+is the perturbation, and introducing the trace-reversed perturbation
+\begin{equation}
+	\bar{h}_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\,\eta_{\mu\nu}\, h, \qquad
+	h \equiv \eta^{\mu\nu}h_{\mu\nu},
+\end{equation}
+the Lorenz gauge condition $\partial^{\mu}\bar{h}_{\mu\nu} = 0$ reduces the linearized Einstein
+equations to the compact wave equation
+\begin{equation}
+	\Box\,\bar{h}_{\mu\nu} = -\frac{16\pi G}{c^{4}}\,T_{\mu\nu},
+	\label{eq:wave}
+\end{equation}
+where $\Box = -c^{-2}\partial_t^2 + \nabla^2$ is the d'Alembertian operator and $T_{\mu\nu}$ is
+the stress-energy tensor of the source. In vacuum ($T_{\mu\nu}=0$), Eq.~\eqref{eq:wave} becomes
+the homogeneous wave equation, admitting plane-wave solutions propagating at the speed of light.
+In the transverse-traceless (TT) gauge, only two independent polarization states survive --- the
+\emph{plus} polarization $h_{+}$ and the \emph{cross} polarization $h_{\times}$ --- reflecting the
+two physical degrees of freedom of a massless spin-2 field. A passing gravitational wave with
+wavevector along the $z$-axis deforms a ring of test masses in the $xy$-plane as
+\begin{equation}
+	ds^2 = -c^2\,dt^2 + \bigl[1 + h_+(t)\bigr]\,dx^2
+	+ \bigl[1 - h_+(t)\bigr]\,dy^2
+	+ 2\,h_\times(t)\,dx\,dy + dz^2,
+\end{equation}
+making interferometric arm-length differences directly sensitive to the gravitational-wave strain
+$h(t) = \Delta L(t)/L$.
+
+\subsection*{The Quadrupole Formula and Binary Black Hole Systems}
+
+Far from the source, the leading-order gravitational-wave emission is governed by the quadrupole
+formula. The retarded solution to Eq.~\eqref{eq:wave} gives, in the TT gauge,
+\begin{equation}
+	h_{ij}^{\mathrm{TT}}(t,\mathbf{x}) =
+	\frac{2G}{c^{4}\,r}\,\Lambda_{ij,kl}\,
+	\ddot{Q}^{kl}\!\left(t_{\mathrm{ret}}\right), \qquad t_{\mathrm{ret}} = t - r/c,
+	\label{eq:quad}
+\end{equation}
+where $r$ is the luminosity distance to the source, $\Lambda_{ij,kl}$ is the TT projection
+operator, and $Q^{ij}$ is the traceless mass quadrupole moment\cite{Maggiore2007}
+\begin{equation}
+	Q^{ij} = \int_{\mathcal{V}} \rho\!\left(x^i x^j - \tfrac{1}{3}\,\delta^{ij} r^2\right)d^3x.
+\end{equation}
+Equation~\eqref{eq:quad} encodes a fundamental selection rule: gravitational-wave emission
+requires a \emph{time-varying quadrupole moment}. Spherically symmetric collapse and uniformly
+rotating rigid bodies produce no radiation; a binary system, by contrast, is an ideally
+asymmetric and time-varying source.
+
+For two point masses $m_1$ and $m_2$ in a circular Newtonian orbit of separation $d$ and
+angular frequency $\Omega$, the total radiated power follows the Peters formula
+\begin{equation}
+	P = \frac{32}{5}\,\frac{G^4}{c^5}\,
+	\frac{(m_1 m_2)^2(m_1+m_2)}{d^5}.
+	\label{eq:peters}
+\end{equation}
+Energy loss through gravitational radiation causes the orbital separation to shrink and the
+orbital frequency to increase. The merger timescale for a circular binary is
+\begin{equation}
+	\tau_{\mathrm{merge}} \approx
+	\frac{12}{19}\,\frac{c^5\,d_0^4}{G^3\,m_1\,m_2\,(m_1+m_2)},
+\end{equation}
+where $d_0$ is the initial separation \cite{Maggiore2007}. For the GW150914 progenitor system this timescale was on
+the order of the age of the universe, culminating in the observed merger event.
+
+\subsection*{The Chirp Signal and the Chirp Mass}
+
+The frequency evolution of the gravitational-wave signal during inspiral is governed by
+\begin{equation}
+	\dot{f}_{\mathrm{GW}} =
+	\frac{96\pi^{8/3}}{5}\,
+	\left(\frac{G\mathcal{M}}{c^3}\right)^{5/3}
+	f_{\mathrm{GW}}^{\,11/3},
+	\label{eq:fdot}
+\end{equation}
+where the \emph{chirp mass}
+\begin{equation}
+	\mathcal{M} = \frac{(m_1 m_2)^{3/5}}{(m_1+m_2)^{1/5}}
+\end{equation}
+is the single best-constrained quantity in a gravitational-wave observation.
+Integrating Eq.~\eqref{eq:fdot} shows that $f_{\mathrm{GW}}$ increases monotonically with time,
+and the waveform amplitude scales as $h \propto \mathcal{M}^{5/3} f_{\mathrm{GW}}^{2/3} / r$ \cite{Cutler_1994}.
+The resulting signal --- a sinusoid with simultaneously increasing frequency and amplitude --- is
+universally known as a \emph{chirp}. For GW150914, with $m_1 \approx 36\,M_\odot$ and
+$m_2 \approx 29\,M_\odot$, the chirp mass is $\mathcal{M} \approx 28.3\,M_\odot$, and the
+signal sweeps from $\sim 35$\,Hz to $\sim 250$\,Hz in roughly $0.2$ seconds \cite{Abbott2016Discovery}.
+
+\subsection*{Three Phases of the Signal}
+
+The complete gravitational-wave signal from a binary black hole coalescence divides into three
+morphologically distinct phases:
+
+\begin{enumerate}
+	\item \textbf{Inspiral.} The early phase is well described by post-Newtonian (PN) perturbation
+	theory, in which the binary slowly loses binding energy to gravitational radiation. The
+	waveform is a chirp with monotonically increasing frequency and amplitude, whose phase
+	evolution is captured order-by-order in the small parameter $v/c$. For GW150914, the
+	inspiral sweeps through the LIGO band from $\sim 35$\,Hz to $\sim 150$\,Hz \cite{Cutler_1994, Maggiore2007}.
+	
+	\item \textbf{Merger.} As the separation approaches the light-ring radius, post-Newtonian
+	expansions diverge and the system enters the fully nonlinear regime of general relativity.
+	This phase, characterized by peak strain amplitude and highly asymmetric mass distribution,
+	is accessible only through numerical relativity simulations, such as those underpinning the
+	IMRPhenomD family of waveform models used in the present analysis\cite{Cutler_1994, Maggiore2007}.
+	
+	\item \textbf{Ringdown.} Following merger, the remnant Kerr black hole relaxes to stationarity
+	by emitting gravitational radiation in the form of exponentially damped sinusoids known as
+	quasi-normal modes (QNMs). The dominant QNM frequency and quality factor are determined
+	entirely by the remnant mass $M_f$ and dimensionless spin $\chi_f$, providing a direct
+	observational test of the Kerr no-hair theorem \cite{Cutler_1994, Maggiore2007}.
+\end{enumerate}
+
+\subsection*{Scope of This Work}
+
+This paper presents an independent analysis of GW150914 using publicly available strain data from
+the LIGO Open Science Center. The goal is to reproduce and interpret the key observational
+signatures of the event through a sequence of complementary methods. We begin with data
+acquisition and conditioning --- including power spectral density estimation, whitening, and
+bandpass filtering --- to suppress instrumental noise and isolate the astrophysical signal
+(Section~3). We then measure the inter-detector time delay between the Hanford (H1) and
+Livingston (L1) observatories via cross-correlation, providing direct evidence of signal coherence
+across the detector network (Section~4). A time--frequency analysis using the Q-transform is
+employed to visualize the characteristic chirp morphology (Section~5). Finally, we apply matched
+filtering with IMRPhenomD templates to quantify the signal-to-noise ratio, and perform a
+$\chi^2$ signal consistency test to assess template match quality and suppress noise transients
+(Section~6).
+
+The combination of these analyses yields a reweighted SNR $\hat{\rho} \approx 13.3$, a reduced
+$\chi^2_{\mathrm{red}} = 2.10$, and best-fit component masses of $35.5\,M_\odot$ and
+$30.5\,M_\odot$, in close agreement with the published discovery paper \cite{Abbott2016Discovery}. Taken
+together, they constitute a self-contained and reproducible confirmation of the first
+gravitational-wave detection, and illustrate the power of open data in enabling independent
+scientific verification.

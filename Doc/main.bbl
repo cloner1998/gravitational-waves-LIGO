@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{Abbott2016Discovery}
+B.~P. et al. (LIGO Scientific~Collaboration Abbott and Virgo Collaboration).
+\newblock Observation of gravitational waves from a binary black hole merger.
+\newblock {\em Phys. Rev. Lett.}, 116:061102, 2016.
+
+\bibitem{Maggiore2007}
+M.~Maggiore.
+\newblock {\em Gravitational Waves: Theory and Experiments}, volume~1.
+\newblock Oxford University Press, 2007.
+
+\bibitem{Cutler_1994}
+Curt Cutler and Éanna~E. Flanagan.
+\newblock Gravitational waves from merging compact binaries: How accurately can
+  one extract the binary’s parameters from the inspiral waveform?
+\newblock {\em Physical Review D}, 49(6):2658–2697, March 1994.
+
+\bibitem{Aasi2015AdvancedLIGO}
+J.~et al. (LIGO Scientific~Collaboration) Aasi.
+\newblock Advanced ligo.
+\newblock {\em Class. Quant. Grav.}, 32:074001, 2015.
+
+\bibitem{Abbott2016Properties}
+B.~P. et~al. Abbott.
+\newblock Properties of the binary black hole merger gw150914.
+\newblock {\em Phys. Rev. Lett.}, 116:241102, 2016.
+
+\bibitem{Chatterji2004}
+S.~Chatterji.
+\newblock The search for gravitational-wave bursts in data from the second ligo
+  science run.
+\newblock 2004.
+
+\bibitem{Chatterji2005}
+S.~Chatterji, L.~Blackburn, G.~Martin, and E.~Katsavounidis.
+\newblock Multiresolution techniques for the detection of gravitational-wave
+  bursts.
+\newblock {\em Classical and Quantum Gravity}, 21:S1809--S1818, 2004.
+
+\bibitem{Allen2005Chisq}
+B.~Allen.
+\newblock A chi-squared time-frequency discriminator for gravitational wave
+  detection.
+\newblock {\em Phys. Rev. D}, 71:062001, 2005.
+
+\end{thebibliography}
